@@ -12,9 +12,8 @@ function multiplicar(a, b) {
 
 function dividir(a, b) {
   if (b === 0) {
-    return "Nao e possivel dividir por zero";
+    return "Não é possível dividir por zero";
   }
-
   return a / b;
 }
 
@@ -38,16 +37,14 @@ function maiorNumero(a, b) {
   if (a > b) {
     return a;
   }
-
   return b;
 }
 
 function menorNumero(a, b) {
-  if (a < b) {
-    return a;
+  if (b < a) {
+    return b;
   }
-
-  return b;
+  return a;
 }
 
 console.log("somar:", somar(2, 3));
@@ -57,7 +54,7 @@ console.log("dividir:", dividir(10, 2));
 console.log("dividir por zero:", dividir(10, 0));
 console.log("ehPar:", ehPar(8));
 console.log("ehMaiorDeIdade:", ehMaiorDeIdade(21));
-console.log("calcularIMC:", calcularIMC(70, 1.75).toFixed(2));
+console.log("calcularIMC:", calcularIMC(70, 1.75));
 console.log(
   "converterCelsiusParaFahrenheit:",
   converterCelsiusParaFahrenheit(25)
